@@ -1,0 +1,112 @@
+# Title Page
+snippet title "Title page" b
+Title:
+    ${1:`!v expand('%:t:r')`}
+Credit: Written by
+Author: ${2:Your Name}
+Source: ${3:Based on / Story by: Author}
+Draft date: `date +%m/%d/%Y`
+Contact:
+    ${5:Organization Name}
+    ${6:Address Line #1}
+    ${7:Address Line #2}
+
+$0
+
+> FIN <
+endsnippet
+
+# Scene Headings
+snippet id "INT. DAY" b
+INT. $1 - DAY
+
+$0
+endsnippet
+
+snippet in "INT. NIGHT" b
+INT. $1 - NIGHT
+
+$0
+endsnippet
+
+snippet ed "INT. DAY" b
+EXT. $1 - DAY
+
+$0
+endsnippet
+snippet en "INT. NIGHT" b EXT. $1 - NIGHT
+$0
+endsnippet
+
+# Boneyard Snippets
+
+# Wrap Text in Bone Yard
+snippet b "Boneyard"
+
+/*
+${VISUAL}
+*/
+
+$0
+endsnippet
+
+# To use this, select the desired text in visual mode "v". Then enter the key sequence "iw" to wrap the text in a boneyard. Then enter <tab>b<tab>.
+
+snippet cb "Create Boneyard"
+
+/*
+$1
+*/
+
+$0
+endsnippet
+
+# Emphasis
+snippet it "italics" i
+*$1*$0
+endsnippet
+
+snippet bf "boldface" i
+**$1**$0
+endsnippet
+
+snippet un "underline" i
+_$1_$0
+endsnippet
+
+snippet c "centered text" b
+> $1 <
+
+$0
+endsnippet
+
+# Other
+snippet ts "two spaces" b
+{two spaces}
+$0
+endsnippet
+
+snippet ct "CUT TO:" iA
+CUT TO:
+
+$0
+endsnippet
+
+snippet beg "BEGIN / END" bA
+BEGIN: $1
+
+$0
+
+END: $1
+endsnippet
+
+# For a character you use very frequently, or a character with a particularly long name, copy then uncomment the 3 lines below:
+#snippet name "description" b
+#long name
+#endsnippet
+#
+#Example:
+#
+#snippet Jugemu "Jugemu Jugemu" b
+#Jugemu Jugemu Go-Kō-no-Surikire Kaijari-suigyo no Suigyō-matsu Unrai-matsu Fūrai-matsu Kū-Neru Tokoro ni Sumu Tokoro Yaburakōji no Burakōji Paipo Paipo Paipo no Shūringan Shūringan no Gūrindai Gūrindai no Ponpokopii no Ponpokonaa no Chōkyūmei no Chōsuke
+#endsnippet
